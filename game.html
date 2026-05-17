@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong Hra - game</title>
+    <link href="css/ui.css" rel = "stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="textures/favicon_game.ico">
+</head>
+<body>
+
+<p class="leftText" id = "leftScore">0</p>
+<p class="rightText" id = "rightScore">0</p>
+
+
+<div id="endFrame">
+    <p id="winnerLabel">Left Wins!</p>
+    <p id="endDescriptionLabel">Winner Winner Chicken Dinner</p>
+    <button class="playAgainButton" onclick="location.reload()">Play Again</button>
+    <button class="exitButton" onclick="location.href = 'index.html'">Exit</button>
+</div>
+
+<canvas id="gameCanvas" width="1350" height="900"></canvas>
+<script src = "js/gameController.js" type="module"></script>
+<script src = "js/ui.js"></script>
+
+</body>
+</html>

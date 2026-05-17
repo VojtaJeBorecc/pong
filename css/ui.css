@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+#gameCanvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 1450px;
+    height: 900px;
+
+    background: #10052d;
+    border: 5px solid #fff;
+    border-radius: 12px;
+
+    z-index: -1;
+}
+
+.leftText,
+.rightText{
+    position: absolute;
+    top: 5%;
+
+    font: bold 60px Arial;
+    color: #fff;
+
+    transform: translateX(-50%);
+}
+
+.leftText{ left: 35%; }
+.rightText{ left: 65%; }
+
+#menuFrame,
+#optionsFrame,
+#endFrame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 25vw;
+
+    border: 5px solid #fff;
+    border-radius: 12px;
+
+    background: #001d70;
+}
+
+#menuFrame{
+    height: 40vh;
+}
+
+
+#optionsFrame{
+    height: 61vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vh;
+}
+
+#endFrame{
+    display: none;
+    height: 30vh;
+}
+
+#menuTitle,
+#optionsTitle,
+#winnerLabel{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font: bold 2.5vw Arial;
+    color: #fff;
+    text-align: center;
+}
+
+#menuTitle,
+#winnerLabel{
+    top: -1.5vw;
+    width: 30vh;
+}
+
+#optionsTitle{
+    top: -2vw;
+}
+
+#endDescriptionLabel{
+    position: absolute;
+    top: 4vw;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 30vw;
+
+    font: bold 1.25vw Arial;
+    color: #fff;
+    text-align: center;
+}
+
+button{
+    font: bold 1.2vw Arial;
+    color: #fff;
+
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    background: #4b4b4b;
+    transition: 0.1s;
+}
+
+button:hover{
+    filter: brightness(1.2);
+}
+
+.selectedButton{
+    background: #00D60B;
+    color: #fff;
+}
+
+.playButton,
+.optionsButton{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 10vw;
+    height: 3vw;
+}
+
+.playButton{
+    top: 9vw;
+    background: #00D60B;
+}
+
+.optionsButton{
+    top: 14vw;
+}
+
+.playAgainButton,
+.exitButton{
+    position: absolute;
+    top: 10vw;
+
+    transform: translateX(-50%);
+    height: 3vw;
+}
+
+.playAgainButton{
+    left: 18.5vw;
+    width: 10vw;
+    background: #00D60B;
+}
+
+.exitButton{
+    left: 5.5vw;
+    width: 8vw;
+    background: #D62100;
+}
+
+.sectionLabel{
+    margin-top: 1vh;
+
+    font: bold 1.2vw Arial;
+    color: #fff;
+    text-align: center;
+}
+
+.buttonRow{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.buttonRow button{
+    width: 4vw;
+    height: 2.5vw;
+}
+
+.backButton{
+    position: absolute;
+    bottom: 1vw;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 8vw;
+    height: 2.8vw;
+
+    background: #D62100;
+}
