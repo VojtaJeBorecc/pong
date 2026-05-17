@@ -1,4 +1,5 @@
 project can be found on Github: https://github.com/VojtaJeBorecc/pong
+playable browser page can be found on: https://vojtajeborecc.github.io/pong/
 
 A school project made in a few hours, inspired by the original game Pong.
 Game includes settings that save with localStorage.
