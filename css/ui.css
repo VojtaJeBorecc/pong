@@ -34,6 +34,18 @@ body{
 .leftText{ left: 35%; }
 .rightText{ left: 65%; }
 
+footer{
+    position: absolute;
+    top: 90%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+
+    font-family: Arial;
+    font-weight: normal;
+
+    color: #fff;
+}
+
 #menuFrame,
 #optionsFrame,
 #endFrame{
@@ -192,6 +204,19 @@ button:hover{
     transform: translateX(-50%);
 
     width: 8vw;
+    height: 2.8vw;
+
+    background: #D62100;
+}
+
+
+.XButton{
+    position: absolute;
+    top: 3.25vw;
+    left: 87%;
+    transform: translateX(-50%);
+
+    width: 2.8vw;
     height: 2.8vw;
 
     background: #D62100;
